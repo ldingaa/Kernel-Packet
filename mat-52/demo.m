@@ -1,10 +1,10 @@
 clear all
 close all
 
-X=sort(rand(1,100000)*1000);  %100000 data points
-theta=.2;
+X=sort(rand(1,10000)*100);  %10000 data points
+theta=1;
 Y=sin(pi*X);                 %value of sin on X
-x=rand*1000;                  %a random input point
+x=rand*100;                %a random input point
 
 tic
 [A,Phi]=compute_APhi(X,theta);
